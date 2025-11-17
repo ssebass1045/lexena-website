@@ -1,10 +1,10 @@
-
 'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-lexena-azul text-lexena-blanco sticky top-0 z-40 shadow-lg">
+    <header className="bg-lexena-azul text-lexena-blanco sticky top-0 z-40 shadow-lg dark-mode-transition">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
@@ -50,17 +50,21 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <ThemeToggle />
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <div className="w-6 h-0.5 bg-lexena-blanco mb-1.5"></div>
-            <div className="w-6 h-0.5 bg-lexena-blanco mb-1.5"></div>
-            <div className="w-6 h-0.5 bg-lexena-blanco"></div>
-          </button>
+          <div className="flex items-center space-x-4 md:hidden">
+            <ThemeToggle />
+            <button
+              className="p-2"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <div className="w-6 h-0.5 bg-lexena-blanco mb-1.5"></div>
+              <div className="w-6 h-0.5 bg-lexena-blanco mb-1.5"></div>
+              <div className="w-6 h-0.5 bg-lexena-blanco"></div>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
