@@ -108,33 +108,43 @@ export default function Home() {
                     Lex<span className="text-lexena-naranja">ENA</span>
                   </h1>
                   
-                  <p className="text-xl md:text-2xl mb-8 text-lexena-gris font-light">
+                  
+                  <p className="text-xl md:text-2xl mb-8 text-lexena-gris font-light [text-shadow:_0_1px_2px_rgb(0_0_0_/_40%)]">
                     Excelencia Legal en el Urabá Antioqueño
                   </p>
                   
-                  <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl">
-                    Firma de abogados especializados en <span className="text-lexena-naranja font-semibold">derecho minero ambiental</span>, 
-                    <span className="text-lexena-verde font-semibold"> legislación aduanera</span> e 
-                    <span className="text-lexena-blanco font-semibold"> insolvencia empresarial</span>.
+                  
+                  <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl [text-shadow:_0_1px_2px_rgb(0_0_0_/_30%)]">
+                    Firma de abogados especializados en <span className="text-lexena-naranja font-semibold [text-shadow:_0_1px_1px_rgb(0_0_0_/_20%)]">derecho minero ambiental</span>, 
+                    <span className="text-lexena-verde font-semibold [text-shadow:_0_1px_1px_rgb(0_0_0_/_20%)]"> legislación aduanera</span> e 
+                    <span className="text-lexena-blanco font-semibold [text-shadow:_0_1px_1px_rgb(0_0_0_/_20%)]"> insolvencia empresarial</span>.
                   </p>
 
-                  {/* Trust Metrics */}
+                  {/* Trust Metrics - Estilo Glassmorphism */}
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-lexena-naranja mb-1">+</div>
-                      <div className="text-sm text-lexena-gris">Años de Experiencia</div>
+                      <div className="bg-gradient-to-br from-lexena-naranja/20 to-lexena-verde/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
+                        <div className="text-3xl font-bold text-lexena-naranja mb-1 [text-shadow:_0_1px_2px_rgb(0_0_0_/_50%)]">7+</div>
+                        <div className="text-sm text-lexena-blanco [text-shadow:_0_1px_1px_rgb(0_0_0_/_60%)]">Años de Experiencia</div>
+                      </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-lexena-verde mb-1">3</div>
-                      <div className="text-sm text-lexena-gris">Áreas Especializadas</div>
+                      <div className="bg-gradient-to-br from-lexena-verde/20 to-lexena-naranja/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
+                        <div className="text-3xl font-bold text-lexena-naranja mb-1 [text-shadow:_0_1px_2px_rgb(0_0_0_/_50%)]">3</div>
+                        <div className="text-sm text-lexena-blanco [text-shadow:_0_1px_1px_rgb(0_0_0_/_60%)]">Áreas Especializadas</div>
+                      </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-lexena-naranja mb-1">24/7</div>
-                      <div className="text-sm text-lexena-gris">Asistencia con IA</div>
+                      <div className="bg-gradient-to-br from-lexena-naranja/20 to-lexena-verde/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
+                        <div className="text-3xl font-bold text-lexena-naranja mb-1 [text-shadow:_0_1px_2px_rgb(0_0_0_/_50%)]">24/7</div>
+                        <div className="text-sm text-lexena-blanco [text-shadow:_0_1px_1px_rgb(0_0_0_/_60%)]">Asistencia con IA</div>
+                      </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-lexena-verde mb-1">100+</div>
-                      <div className="text-sm text-lexena-gris">Casos Exitosos</div>
+                      <div className="bg-gradient-to-br from-lexena-verde/20 to-lexena-naranja/20 rounded-2xl p-4 border border-white/10 backdrop-blur-sm">
+                        <div className="text-3xl font-bold text-lexena-naranja mb-1 [text-shadow:_0_1px_2px_rgb(0_0_0_/_50%)]">100+</div>
+                        <div className="text-sm text-lexena-blanco [text-shadow:_0_1px_1px_rgb(0_0_0_/_60%)]">Casos Exitosos</div>
+                      </div>
                     </div>
                   </div>
 
@@ -181,7 +191,7 @@ export default function Home() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
                 >
-                  <div className="w-80 h-80 bg-gradient-to-br from-lexena-naranja/20 to-lexena-verde/20 rounded-full flex items-center justify-center border border-white/10 backdrop-blur-sm">
+                  <div className="w-64 h-64 bg-gradient-to-br from-lexena-naranja/20 to-lexena-verde/20 rounded-full flex items-center justify-center border border-white/10 backdrop-blur-sm">
                     <div className="w-64 h-64 bg-gradient-to-br from-lexena-azul to-lexena-azul-dark rounded-full flex items-center justify-center border border-white/20">
                       <div className="text-center">
                         <ShieldCheck className="w-16 h-16 mx-auto mb-4 text-lexena-naranja" />
@@ -232,299 +242,256 @@ export default function Home() {
 
 
 
-       {/* Servicios Section - Completely Redesigned */}
-      <section id="servicios" className="py-20 bg-lexena-blanco">
+            {/* Servicios Section - Completely Redesigned */}
+      <section id="servicios" className="py-20 bg-gradient-to-br from-gray-50 to-lexena-blanco">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
-            <h1 className="text-4xl font-bold text-lexena-azul mb-4">
-              SERVICIOS LEGALES ESPECIALIZADOS: 
-            </h1>
-            <br>
-            </br>
-            <h2 className="text-2xl font-bold text-lexena-azul mb-3">
-              🟢 Insolvencia: Reorganización - Liquidación
+            <h2 className="text-4xl font-bold text-lexena-azul mb-4">
+              Servicios Legales Especializados
             </h2>
-            <h2 className="text-2xl font-bold text-lexena-azul mb-3">
-              🟢 Legislación Aduanera y Comercio Internacional 
-            </h2>
-            <h2 className="text-2xl font-bold text-lexena-azul mb-3">
-              🟢 Derecho Minero y Ambiental
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Soluciones legales integrales adaptadas a las necesidades específicas de su empresa o proyecto
             </p>
           </div>
-          
-          {/* Área 3: Insolvencia y Reestructuración Empresarial */}
-          <div className="mb-16" data-aos="fade-up" data-aos-delay="200">
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-lexena-naranja rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
+
+          {/* Área 1: Insolvencia y Reestructuración Empresarial */}
+          <div className="mb-12" data-aos="fade-up">
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-green-500 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-lexena-azul">Insolvencia: Reorganización - Liquidación</h3>
               </div>
-              <h3 className="text-3xl font-bold text-lexena-azul mb-4">Insolvencia: Reorganización - Liquidación </h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-gray-700 mb-6 text-lg">
                 Soluciones legales para empresas en crisis financiera y procesos de reestructuración
               </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-verde hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Insolvencia Empresarial</h4>
-                <p className="text-gray-600 mb-4">
-                  Gestión de procesos de insolvencia bajo supervisión de Superintendencia de Sociedades
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Reorganización empresarial
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Liquidación voluntaria
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Actuación como liquidador
-                  </li>
-                </ul>
-              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-green-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia Empresarial</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Gestión de procesos de insolvencia bajo supervisión de Superintendencia de Sociedades
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Reorganización empresarial
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Liquidación voluntaria
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Actuación como liquidador
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-verde hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Insolvencia Personal</h4>
-                <p className="text-gray-600 mb-4">
-                  Asesoría legal para personas naturales y pequeños comerciantes
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Alivio financiero personal
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Reorganización de deudas
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Acuerdos con acreedores
-                  </li>
-                </ul>
-              </div>
+                <div className="bg-green-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia Personal</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Asesoría legal para personas naturales y pequeños comerciantes
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Alivio financiero personal
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Reorganización de deudas
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                      Acuerdos con acreedores
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-verde hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Otros Servicios</h4>
-                <p className="text-gray-600 mb-4">
-                  Pregunta en que mas te podemos ayudar desde esta area.
-                </p>
-                {/* <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Defensa penal empresarial
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Gestión de procesos disciplinarios
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Asesoría en compliance
-                  </li>
-                </ul> */}
+                <div className="bg-green-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-green-800 mb-3">Otros Servicios</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Pregunta en qué más te podemos ayudar desde esta área
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <p>Servicios adicionales especializados</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
-
-          {/* <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-verde hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Delitos Económicos</h4>
-                <p className="text-gray-600 mb-4">
-                  Defensa legal especializada en delitos económicos y financieros
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Defensa penal empresarial
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Gestión de procesos disciplinarios
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-verde rounded-full mr-3"></span>
-                    Asesoría en compliance
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> */}
 
           {/* Área 2: Legislación Aduanera y Comercio Internacional */}
-          <div className="mb-16" data-aos="fade-up" data-aos-delay="100">
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-lexena-naranja rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="100">
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-lexena-azul">Comercio Internacional y Aduanas</h3>
               </div>
-              <h3 className="text-3xl font-bold text-lexena-azul mb-4">Comercio Internacional y Aduanas</h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-gray-700 mb-6 text-lg">
                 Soluciones integrales para operaciones de comercio exterior y cumplimiento aduanero
               </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-azul hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Asesoría Aduanera</h4>
-                <p className="text-gray-600 mb-4">
-                  Gestión legal especializada en operaciones de importación y exportación
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Trámites de importación/exportación
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Clasificación arancelaria
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Régimen de zonas francas
-                  </li>
-                </ul>
-              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-blue-800 mb-3">Asesoría Aduanera</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Gestión legal especializada en operaciones de importación y exportación
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Trámites de importación/exportación
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Clasificación arancelaria
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Régimen de zonas francas
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-azul hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Inversiones Internacionales</h4>
-                <p className="text-gray-600 mb-4">
-                  Canalización y gestión de inversiones extranjeras en Colombia
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Inversión extranjera directa
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Registro ante BanRep
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Canalización de pagos internacionales
-                  </li>
-                </ul>
-              </div>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-blue-800 mb-3">Inversiones Internacionales</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Canalización y gestión de inversiones extranjeras en Colombia
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Inversión extranjera directa
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Registro ante BanRep
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Canalización de pagos internacionales
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-azul hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Asesoría Contable y Tributaria</h4>
-                <p className="text-gray-600 mb-4">
-                  Servicios contables y fiscales para optimización tributaria
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Planeación tributaria
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Estructuración contable
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-azul rounded-full mr-3"></span>
-                    Cumplimiento obligaciones DIAN
-                  </li>
-                </ul>
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-blue-800 mb-3">Asesoría Contable y Tributaria</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Servicios contables y fiscales para optimización tributaria
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Planeación tributaria
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Estructuración contable
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Cumplimiento obligaciones DIAN
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
-
-
-
-          {/* Área 1: Derecho Minero y Ambiental */}
-          <div className="mb-16" data-aos="fade-up">
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-lexena-naranja rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+          {/* Área 3: Derecho Minero y Ambiental */}
+          <div className="mb-12" data-aos="fade-up" data-aos-delay="200">
+            <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-orange-500 hover:shadow-xl transition-all duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-lexena-azul">Derecho Minero y Ambiental</h3>
               </div>
-              <h3 className="text-3xl font-bold text-lexena-azul mb-4">Derecho Minero y Ambiental</h3>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-gray-700 mb-6 text-lg">
                 Asesoría integral en proyectos mineros y ambientales con enfoque en sostenibilidad y cumplimiento normativo
               </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-naranja hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Licencias Ambientales</h4>
-                <p className="text-gray-600 mb-4">
-                  Gestión integral de trámites y permisos ambientales para proyectos sostenibles
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Estudios de impacto ambiental
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Permisos de aprovechamiento forestal
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Planes de manejo ambiental
-                  </li>
-                </ul>
-              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-orange-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-orange-800 mb-3">Licencias Ambientales</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Gestión integral de trámites y permisos ambientales para proyectos sostenibles
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Estudios de impacto ambiental
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Permisos de aprovechamiento forestal
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Planes de manejo ambiental
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-naranja hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Consultoría Minera</h4>
-                <p className="text-gray-600 mb-4">
-                  Asesoría legal especializada en todos los aspectos de la actividad minera
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Títulos mineros y contratos
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Due diligence minero-ambiental
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Relaciones con comunidades
-                  </li>
-                </ul>
-              </div>
+                <div className="bg-orange-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-orange-800 mb-3">Consultoría Minera</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Asesoría legal especializada en todos los aspectos de la actividad minera
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Títulos mineros y contratos
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Due diligence minero-ambiental
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Relaciones con comunidades
+                    </li>
+                  </ul>
+                </div>
 
-              <div className="bg-white rounded-xl shadow-lg p-6 border-l-4 border-lexena-naranja hover:shadow-xl transition-all duration-300">
-                <h4 className="text-xl font-bold text-lexena-azul mb-3">Derecho Inmobiliario</h4>
-                <p className="text-gray-600 mb-4">
-                  Servicios legales especializados en desarrollo urbano y propiedad
-                </p>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Avalúos técnicos y legales
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Compraventas y contratos
-                  </li>
-                  <li className="flex items-center">
-                    <span className="w-2 h-2 bg-lexena-naranja rounded-full mr-3"></span>
-                    Regularización de predios
-                  </li>
-                </ul>
+                <div className="bg-orange-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-orange-800 mb-3">Derecho Inmobiliario</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Servicios legales especializados en desarrollo urbano y propiedad
+                  </p>
+                  <ul className="text-sm text-gray-500 space-y-2">
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Avalúos técnicos y legales
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Compraventas y contratos
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Regularización de predios
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           {/* CTA Section */}
           <div className="text-center mt-12" data-aos="fade-up">
-            <div className="bg-lexena-azul rounded-2xl p-8 text-lexena-blanco">
+            <div className="bg-gradient-to-r from-lexena-azul to-blue-800 rounded-2xl p-8 text-lexena-blanco">
               <h3 className="text-2xl font-bold mb-4">¿Necesita asesoría legal especializada?</h3>
               <p className="text-lg mb-6 max-w-2xl mx-auto">
                 Nuestro equipo multidisciplinario está listo para brindarle soluciones legales efectivas y personalizadas
