@@ -151,7 +151,7 @@ export default function Home() {
                   {/* Enhanced CTAs */}
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <motion.a
-                      href="https://wa.me/573105302619?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal"
+                      href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl"
@@ -241,8 +241,7 @@ export default function Home() {
       </section>
 
 
-
-            {/* Servicios Section - Completely Redesigned */}
+      {/* Servicios Section - Completely Redesigned */}
       <section id="servicios" className="py-20 bg-gradient-to-br from-gray-50 to-lexena-blanco">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
@@ -497,7 +496,7 @@ export default function Home() {
                 Nuestro equipo multidisciplinario está listo para brindarle soluciones legales efectivas y personalizadas
               </p>
               <a 
-                href="https://wa.me/573105302619?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 inline-block"
@@ -511,6 +510,105 @@ export default function Home() {
       </section>
 
 
+
+      {/* Sección ENA - Después de Servicios */}
+      <section id="ena" className="py-20 bg-gradient-to-br from-gray-900 to-lexena-azul text-lexena-blanco">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Contenido de Texto */}
+            <div data-aos="fade-right">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                Presentamos a <span className="text-lexena-naranja">ENA</span>: Inteligencia Artificial al servicio de tu tranquilidad legal.
+              </h2>
+              <p className="text-lg md:text-xl mb-8 leading-relaxed text-gray-300">
+                Tu asistente jurídico disponible 24/7. ENA agiliza la consulta inicial, analiza documentos preliminares y te conecta con el especialista adecuado al instante.
+              </p>
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center">
+                  <div className="w-8 h-8 bg-lexena-naranja rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">✓</span>
+                  </div>
+                  <span className="text-lg">Respuestas inmediatas a consultas legales básicas</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 bg-lexena-naranja rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">✓</span>
+                  </div>
+                  <span className="text-lg">Análisis preliminar de documentos legales</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 bg-lexena-naranja rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">✓</span>
+                  </div>
+                  <span className="text-lg">Conexión directa con abogados especializados</span>
+                </div>
+                <div className="flex items-center">
+                  <div className="w-8 h-8 bg-lexena-naranja rounded-full flex items-center justify-center mr-3">
+                    <span className="text-white font-bold">✓</span>
+                  </div>
+                  <span className="text-lg">Disponible 24 horas, 7 días a la semana</span>
+                </div>
+              </div>
+              <motion.a
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20interactuar%20con%20ENA%20(Asistente%20Jurídico%20Virtual)`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 flex items-center justify-center gap-3 shadow-lg hover:shadow-xl inline-block"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                Interactuar con ENA ahora
+                <motion.span
+                  animate={{ x: [0, 5, 0] }}
+                  transition={{ duration: 1.5, repeat: Infinity }}
+                  className="text-lg"
+                >
+                  →
+                </motion.span>
+              </motion.a>
+            </div>
+
+            {/* Imagen de ENA - Usando ia.jpg */}
+            <div className="relative" data-aos="fade-left">
+              <div className="bg-gradient-to-br from-lexena-naranja/20 to-lexena-azul/20 rounded-2xl p-8 border border-white/10 backdrop-blur-sm">
+                <div className="aspect-square w-full max-w-md mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-full flex items-center justify-center border-4 border-lexena-naranja/30 overflow-hidden">
+                  <div className="relative w-full h-full">
+                    <Image
+                      src="/ia.jpg"
+                      alt="ENA - Asistente Jurídico Virtual de IA"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-br from-lexena-naranja/10 to-blue-500/10"></div>
+                  </div>
+                </div>
+                <div className="text-center mt-6">
+                  <h3 className="text-2xl font-bold text-lexena-naranja mb-2">ENA</h3>
+                  <p className="text-gray-300">Asistente Jurídico Virtual</p>
+                  <div className="mt-4 flex items-center justify-center space-x-2">
+                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                    <span className="text-sm text-gray-400">En línea 24/7</span>
+                  </div>
+                </div>
+                <div className="absolute -top-4 -right-4 bg-lexena-naranja text-white p-3 rounded-full shadow-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-blue-500 text-white p-3 rounded-full shadow-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Alcances y Objetivos Section - Nueva Sección */}
       <section id="alcances-objetivos" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -775,7 +873,7 @@ export default function Home() {
                 y personalizadas para cada uno de estos alcances y objetivos
               </p>
               <a 
-                href="https://wa.me/573105302619?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20especializada"
+                href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20especializada`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 inline-block"
@@ -793,7 +891,7 @@ export default function Home() {
       {/* Nosotros Section */}
       <Nosotros />
 
-      {/* Equipo Section */}
+      {/* Equipo Section - Grid tradicional con ENA */}
       <section id="equipo" className="py-20 bg-lexena-gris">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16" data-aos="fade-up">
@@ -805,9 +903,9 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Abogado 1 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300" data-aos="fade-up">
               <div className="h-48 relative">
                 <Image
                   src="/team/nestor-ramirez.jpg"
@@ -830,7 +928,7 @@ export default function Home() {
             </div>
 
             {/* Abogado 2 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
               <div className="h-48 relative">
                 <Image 
                   src="/team/albeiro-camelo.jpg"
@@ -852,7 +950,7 @@ export default function Home() {
             </div>
 
             {/* Abogado 3 */}
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
               <div className="h-48 relative">
                 <Image 
                   src="/team/edwin-arcila.jpg"
@@ -869,6 +967,37 @@ export default function Home() {
                 <div className="text-sm text-gray-500">
                   <p><strong>Pregrados:</strong> Economista, Abogado</p>
                   <p><strong>Posgrados:</strong> Gestión tributaria</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Tarjeta de ENA - Asistente Jurídico Virtual (Simplificada) */}
+            <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg shadow-lg overflow-hidden border-2 border-lexena-naranja/30 hover:scale-105 hover:shadow-2xl transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+              <div className="h-48 relative">
+                <Image
+                  src="/ia.jpg"
+                  alt="ENA - Asistente Jurídico Virtual de IA"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-lexena-naranja mb-2">ENA - Asistente Jurídico Virtual</h3>
+                <p className="text-gray-300 mb-4">
+                  Inteligencia Artificial especializada en consultas legales iniciales, análisis de documentos y conexión con abogados especializados.
+                </p>
+                <div className="text-sm text-gray-400">
+                  <p><strong>Disponibilidad:</strong> 24 horas, 7 días a la semana</p>
+                  <p><strong>Especialidad:</strong> Consultas iniciales y análisis preliminar</p>
+                  <p><strong>Tecnología:</strong> IA avanzada con aprendizaje continuo</p>
+                </div>
+                <div className="mt-4 pt-4 border-t border-gray-700">
+                  <div className="flex items-center">
+                    <div className="w-2 h-2 bg-lexena-naranja rounded-full mr-2"></div>
+                    <span className="text-xs text-gray-400">Borde brillante identificativo</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -890,13 +1019,13 @@ export default function Home() {
       
       <Footer />
       
-      {/* WhatsApp Floating Button */}
+      {/* WhatsApp Floating Button con efecto GeshTech */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/573105302619?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal"
+          href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20solicitar%20una%20consulta%20legal`}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center w-16 h-16"
+          className="whatsapp-float bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 flex items-center justify-center w-16 h-16"
           onClick={() => handleWhatsAppClick('Floating Button')}
         >
           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">

@@ -1,4 +1,8 @@
 const Contacto = () => {
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619';
+  const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'info@lexena.co';
+  const contactPhone = process.env.NEXT_PUBLIC_CONTACT_PHONE || '+573105302619';
+
   const ubicaciones = [
     {
       ciudad: "Apartadó",
@@ -45,12 +49,12 @@ const Contacto = () => {
                 <div>
                   <h4 className="text-lg font-semibold mb-1">Teléfono / WhatsApp</h4>
                   <a 
-                    href="https://wa.me/573105302619" 
+                    href={`https://wa.me/${whatsappNumber}`} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-lexena-gris hover:text-lexena-naranja transition-colors"
                   >
-                    +57 310 530 2619
+                    {contactPhone}
                   </a>
                   <p className="text-sm text-lexena-gris mt-1">
                     Atención inmediata por WhatsApp
@@ -113,7 +117,7 @@ const Contacto = () => {
             
             <div className="space-y-6">
               <a
-                href="https://wa.me/573105302619?text=Hola%20LexENA,%20me%20gustaría%20agendar%20una%20consulta%20legal%20gratuita"
+                href={`https://wa.me/${whatsappNumber}?text=Hola%20LexENA,%20me%20gustaría%20agendar%20una%20consulta%20legal%20gratuita`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center text-lg"
@@ -125,13 +129,13 @@ const Contacto = () => {
               </a>
 
               <a
-                href="tel:+573105302619"
+                href={`mailto:${contactEmail}`}
                 className="w-full bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center text-lg"
               >
                 <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                Llamar Ahora
+                Enviar Correo Electrónico
               </a>
 
               <div className="bg-lexena-azul-dark p-6 rounded-lg border border-lexena-gris">
@@ -140,7 +144,7 @@ const Contacto = () => {
                   Para casos urgentes fuera del horario laboral, contamos con servicio de emergencia las 24 horas.
                 </p>
                 <a
-                  href="https://wa.me/573105302619?text=URGENTE%20-%20Necesito%20asesoría%20legal%20inmediata"
+                  href={`https://wa.me/${whatsappNumber}?text=URGENTE%20-%20Necesito%20asesoría%20legal%20inmediata`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lexena-naranja hover:text-orange-400 font-semibold flex items-center"

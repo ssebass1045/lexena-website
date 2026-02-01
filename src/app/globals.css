@@ -60,11 +60,49 @@ body {
   }
 }
 
+@keyframes pulse-glow {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out;
+}
+
+.whatsapp-float {
+  animation: pulse-glow 2s infinite;
 }
 
 /* Clases para modo oscuro */
 .dark-mode-transition * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilos para carrusel de equipo */
+.equipo-carrusel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.equipo-carrusel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.equipo-carrusel-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* Micro-interacciones para servicios */
+.servicio-card {
+  transition: all 0.3s ease;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }

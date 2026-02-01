@@ -12,7 +12,7 @@ const FAQ = () => {
     },
     {
       pregunta: "¿Ofrecen consulta gratuita inicial?",
-      respuesta: "Sí, ofrecemos una consulta inicial gratuita para evaluar tu caso y determinar la mejor estrategia legal. Puedes contactarnos por WhatsApp al +57 310 530 2619 para agendar tu consulta."
+      respuesta: `Sí, ofrecemos una consulta inicial gratuita para evaluar tu caso y determinar la mejor estrategia legal. Puedes contactarnos por WhatsApp para agendar tu consulta.`
     },
     {
       pregunta: "¿Cuáles son los honorarios por los servicios?",
@@ -92,7 +92,7 @@ const FAQ = () => {
             ¿No encontraste respuesta a tu pregunta?
           </p>
           <a 
-            href="https://wa.me/573105302619?text=Hola%20LexENA,%20tengo%20una%20pregunta%20específica%20sobre%20servicios%20legales"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20tengo%20una%20pregunta%20específica%20sobre%20servicios%20legales`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 inline-block"

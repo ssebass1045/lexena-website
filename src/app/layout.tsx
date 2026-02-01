@@ -101,9 +101,22 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LegalService",
-              "name": "LexENA Firma de Abogados",
-              "description": "Firma de abogados especializados en derecho minero ambiental, aduanero e insolvencia empresarial en Urabá Antioquia",
-              "url": "https://lexena.co",
+              "name": "LexENA",
+              "description": "Firma de abogados especializados en derecho minero ambiental, aduanero e insolvencia empresarial Servicios legales modernos potenciados por IA y expertos humanos.",
+              "url": "https://www.lexena.co",
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": "es"
+              },
               "telephone": "+573105302619",
               "address": {
                 "@type": "PostalAddress",

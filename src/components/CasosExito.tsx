@@ -1,96 +1,90 @@
 const CasosExito = () => {
-  const casos = [
+  const pilares = [
     {
       id: 1,
-      titulo: "Recuperación Empresarial Minera",
-      descripcion: "Asesoramos a una empresa minera local en proceso de insolvencia, logrando una reorganización exitosa que permitió mantener 150 empleos en la región de Apartadó.",
-      resultado: "Empresa reactivada con 30% de crecimiento post-reorganización",
-      categoria: "Insolvencia Empresarial",
-      ubicacion: "Apartadó, Antioquia"
+      titulo: "Derecho Corporativo: Blindaje jurídico para startups y PYMES",
+      descripcion: "Estructuración legal integral para empresas emergentes y pequeñas empresas, incluyendo constitución, contratos, propiedad intelectual y cumplimiento regulatorio.",
+      categoria: "Derecho Corporativo",
+      icono: "🏢"
     },
     {
       id: 2,
-      titulo: "Regularización Ambiental Agroindustrial",
-      descripcion: "Gestionamos exitosamente las licencias ambientales para un proyecto agroindustrial en Turbo, superando obstáculos regulatorios complejos.",
-      resultado: "Licencia ambiental obtenida en tiempo récord",
-      categoria: "Derecho Minero Ambiental",
-      ubicacion: "Turbo, Antioquia"
+      titulo: "Resolución de Conflictos: Estrategias de negociación y litigio efectivas",
+      descripcion: "Métodos alternativos de resolución de conflictos y representación en procesos judiciales para proteger sus intereses empresariales y personales.",
+      categoria: "Resolución de Conflictos",
+      icono: "⚖️"
     },
     {
       id: 3,
-      titulo: "Optimización Aduanera Exportadora",
-      descripcion: "Implementamos estrategias legales para una empresa exportadora de banano en Necoclí, reduciendo costos aduaneros en un 25%.",
-      resultado: "Ahorro anual de $180 millones en costos logísticos",
-      categoria: "Legislación Aduanera",
-      ubicacion: "Necoclí, Antioquia"
+      titulo: "Derecho Minero Ambiental: Sostenibilidad y cumplimiento normativo",
+      descripcion: "Asesoría integral en proyectos mineros y ambientales, gestión de licencias, permisos y relaciones con comunidades para operaciones sostenibles.",
+      categoria: "Derecho Minero Ambiental",
+      icono: "🌿"
     },
     {
       id: 4,
-      titulo: "Defensa en Delitos Económicos",
-      descripcion: "Representamos exitosamente a un empresario local acusado de delitos económicos, logrando la absolución completa mediante estrategia legal especializada.",
-      resultado: "Caso desestimado, reputación empresarial preservada",
-      categoria: "Gestión Tributaria",
-      ubicacion: "Chigorodó, Antioquia"
+      titulo: "Legislación Aduanera: Optimización del comercio internacional",
+      descripcion: "Estrategias legales para importación, exportación, zonas francas y cumplimiento aduanero que maximizan eficiencia y reducen costos operativos.",
+      categoria: "Legislación Aduanera",
+      icono: "🌐"
     },
     {
       id: 5,
-      titulo: "Regularización Inmobiliaria",
-      descripcion: "Asesoramos en la regularización de títulos de propiedad para un desarrollo urbano en Mutatá, resolviendo conflictos de tenencia de tierras.",
-      resultado: "120 familias con títulos de propiedad regularizados",
-      categoria: "Derecho Inmobiliario",
-      ubicacion: "Mutatá, Antioquia"
+      titulo: "Insolvencia Empresarial: Reorganización y recuperación financiera",
+      descripcion: "Soluciones legales para empresas en crisis, procesos de reorganización, liquidación y protección de activos ante situaciones de insolvencia.",
+      categoria: "Insolvencia Empresarial",
+      icono: "📊"
     },
     {
       id: 6,
-      titulo: "Protección Ambiental Comunitaria",
-      descripcion: "Representamos a una comunidad en Arboletes en un caso de protección ambiental, logrando medidas de compensación y protección del ecosistema local.",
-      resultado: "Compensación ambiental de $500 millones para la comunidad",
-      categoria: "Derecho Ambiental",
-      ubicacion: "Arboletes, Antioquia"
+      titulo: "Derecho Inmobiliario: Desarrollo urbano y regularización de propiedades",
+      descripcion: "Asesoría en proyectos inmobiliarios, compraventas, contratos de construcción y regularización de títulos de propiedad para seguridad jurídica.",
+      categoria: "Derecho Inmobiliario",
+      icono: "🏠"
     }
   ];
 
   return (
-    <section id="casos-exito" className="py-20 bg-lexena-blanco">
+    <section id="pilares-defensa" className="py-20 bg-lexena-blanco">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-4xl font-bold text-lexena-azul mb-4">
-            Casos de Éxito
+            Nuestros Pilares de Defensa
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Resultados tangibles que demuestran nuestra experiencia y compromiso con los clientes de la región de Urabá
+            Áreas de especialización donde concentramos nuestra experiencia para brindar soluciones legales estratégicas y efectivas
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {casos.map((caso, index) => (
+          {pilares.map((pilar, index) => (
             <div 
-              key={caso.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden border border-lexena-gris"
+              key={pilar.id}
+              className="bg-white rounded-lg shadow-lg overflow-hidden border border-lexena-gris hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
               <div className="p-6">
                 <div className="flex items-center mb-4">
-                  <span className="bg-lexena-naranja text-white text-xs font-semibold px-2 py-1 rounded">
-                    {caso.categoria}
-                  </span>
-                  <span className="ml-2 text-xs text-gray-500">
-                    {caso.ubicacion}
-                  </span>
+                  <div className="text-3xl mr-3">{pilar.icono}</div>
+                  <div>
+                    <span className="bg-lexena-naranja text-white text-xs font-semibold px-2 py-1 rounded">
+                      {pilar.categoria}
+                    </span>
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-bold text-lexena-azul mb-3">
-                  {caso.titulo}
+                  {pilar.titulo}
                 </h3>
                 
                 <p className="text-gray-600 mb-4">
-                  {caso.descripcion}
+                  {pilar.descripcion}
                 </p>
                 
-                <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <p className="text-green-800 font-semibold text-sm">
-                    📈 <strong>Resultado:</strong> {caso.resultado}
+                <div className="bg-gradient-to-r from-blue-50 to-lexena-blanco border border-blue-100 rounded-lg p-4">
+                  <p className="text-blue-800 font-semibold text-sm">
+                    🔍 <strong>Enfoque:</strong> Soluciones personalizadas basadas en las necesidades específicas de cada cliente
                   </p>
                 </div>
               </div>
@@ -100,15 +94,15 @@ const CasosExito = () => {
 
         <div className="text-center mt-12" data-aos="fade-up">
           <p className="text-gray-600 mb-6">
-            ¿Tienes un caso similar? Contáctanos para una evaluación gratuita
+            ¿Necesita asesoría en alguno de nuestros pilares de especialización?
           </p>
           <a 
-            href="https://wa.me/573105302619?text=Hola%20LexENA,%20tengo%20un%20caso%20legal%20y%20me%20gustaría%20una%20asesoría"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '573105302619'}?text=Hola%20LexENA,%20me%20gustaría%20una%20asesoría%20en%20uno%20de%20sus%20pilares%20de%20defensa`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-lexena-naranja hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300 inline-block"
           >
-            Consultar Mi Caso
+            Consulta Especializada
           </a>
         </div>
       </div>
