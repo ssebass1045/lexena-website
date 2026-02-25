@@ -249,7 +249,7 @@ export default function Home() {
               Servicios Legales Especializados
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Soluciones legales integrales adaptadas a las necesidades específicas de su empresa o proyecto
+              Soluciones legales integrales adaptadas a las necesidades específicas de su empresa o persona.
             </p>
           </div>
 
@@ -265,12 +265,12 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-lexena-azul">Insolvencia: Reorganización - Liquidación</h3>
               </div>
               <p className="text-gray-700 mb-6 text-lg">
-                Soluciones legales para empresas en crisis financiera y procesos de reestructuración
+                Soluciones legales para empresas en crisis financiera y procesos de reorganización 
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-green-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia Empresarial</h4>
+                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia Empresarial (Ley 1116)</h4>
                   <p className="text-sm text-gray-600 mb-3">
                     Gestión de procesos de insolvencia bajo supervisión de Superintendencia de Sociedades
                   </p>
@@ -281,32 +281,32 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      Liquidación voluntaria
+                      Liquidación judicial
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      Actuación como liquidador
+                      Liquidación voluntaria
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-green-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia Personal</h4>
+                  <h4 className="font-semibold text-green-800 mb-3">Insolvencia de persona natural no comerciante y pequeño comerciante (Ley 2445) </h4>
                   <p className="text-sm text-gray-600 mb-3">
                     Asesoría legal para personas naturales y pequeños comerciantes
                   </p>
                   <ul className="text-sm text-gray-500 space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      Alivio financiero personal
+                      Acuerdos estratégicos de pagos
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      Reorganización de deudas
+                      Convalidación de acuerdos privados
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      Acuerdos con acreedores
+                      Liquidación patrimonial
                     </li>
                   </ul>
                 </div>
@@ -333,7 +333,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-lexena-azul">Comercio Internacional y Aduanas</h3>
+                <h3 className="text-2xl font-bold text-lexena-azul">Tributario-Aduanero y Cambiario</h3>
               </div>
               <p className="text-gray-700 mb-6 text-lg">
                 Soluciones integrales para operaciones de comercio exterior y cumplimiento aduanero
@@ -357,6 +357,18 @@ export default function Home() {
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                       Régimen de zonas francas
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Pago desde y hacia el exterior y canalización de divisas
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Cierre de operaciones cambiarias 
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Representación en Procesos y Respuesta a Requerimientos Aduaneros 
                     </li>
                   </ul>
                 </div>
@@ -390,15 +402,27 @@ export default function Home() {
                   <ul className="text-sm text-gray-500 space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Planeación tributaria
+                      Planeación tributaria estratégica anual
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Estructuración contable
+                      Elaboración y revisión de declaraciones tributarias
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                      Cumplimiento obligaciones DIAN
+                      Análisis de riesgos tributarios y cumplimiento fiscal
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Representación en procesos administrativos con DIAN
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Actualización y aplicación de nuevas normas tributarias
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                      Optimización de cargas fiscales dentro del marco legal
                     </li>
                   </ul>
                 </div>
@@ -415,22 +439,30 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-lexena-azul">Derecho Minero y Ambiental</h3>
+                <h3 className="text-2xl font-bold text-lexena-azul">Derecho Minero Ambiental e Inmobiliario y Desarrollo Urbano</h3>
               </div>
               <p className="text-gray-700 mb-6 text-lg">
-                Asesoría integral en proyectos mineros y ambientales con enfoque en sostenibilidad y cumplimiento normativo
+                Asesoría integral en proyectos mineros y ambientales, como también en el derecho inmobiliario y el desarrollo urbano con enfoque en sostenibilidad y cumplimiento normativo.
               </p>
               
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-orange-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-orange-800 mb-3">Licencias Ambientales</h4>
+                  <h4 className="font-semibold text-orange-800 mb-3">Derecho minero ambienta </h4>
                   <p className="text-sm text-gray-600 mb-3">
                     Gestión integral de trámites y permisos ambientales para proyectos sostenibles
                   </p>
                   <ul className="text-sm text-gray-500 space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Estudios de impacto ambiental
+                      Contratos de concesión minera
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Licencia ambiental
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Permisos de captación
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
@@ -438,49 +470,57 @@ export default function Home() {
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Planes de manejo ambiental
+                      Permiso de vertimiento
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-orange-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-orange-800 mb-3">Consultoría Minera</h4>
+                  <h4 className="font-semibold text-orange-800 mb-3">Avalúos</h4>
                   <p className="text-sm text-gray-600 mb-3">
-                    Asesoría legal especializada en todos los aspectos de la actividad minera
+                    Asesoría especializada en todos los aspectos de avalúos
                   </p>
                   <ul className="text-sm text-gray-500 space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Títulos mineros y contratos
+                      Corporativos
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Due diligence minero-ambiental
+                      Urbanos, rurales, obras de infraestructura, construcciones especiales, semovientes, servidumbres, intangibles, daño emergente lucro cesante, recursos naturales y suelos de protección, edificaciones de conservación arqueológica y monumentos históricos, maquinaria y equipos especiales, activos, operacionales y establecimientos de comercio 
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Relaciones con comunidades
+                      Revisión y contestación de avalúos como prueba pericial ante el juez
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-orange-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-orange-800 mb-3">Derecho Inmobiliario</h4>
+                  <h4 className="font-semibold text-orange-800 mb-3">Derecho Inmobiliario y desarrollo urbano</h4>
                   <p className="text-sm text-gray-600 mb-3">
                     Servicios legales especializados en desarrollo urbano y propiedad
                   </p>
                   <ul className="text-sm text-gray-500 space-y-2">
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Avalúos técnicos y legales
+                      Estudio de títulos
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Compraventas y contratos
+                      licencias de construcción, parcelación, subdivisión | contratos de arrendamientos
                     </li>
                     <li className="flex items-center">
                       <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      Regularización de predios
+                      desarrollo del territorio
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      conciliación extrajudicial
+                    </li>
+                    <li className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      Código Nacional de Seguridad y Convivencia Ciudadana ley 1801 de 2016
                     </li>
                   </ul>
                 </div>
@@ -765,25 +805,25 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-lexena-azul">Defensa en Delitos Económicos</h3>
               </div>
               <p className="text-gray-700 mb-4 text-lg">
-                <strong>Objetivo:</strong> Brindar una defensa técnica, estratégica y seria a empresarios investigados por posibles delitos económicos.
+                <strong>Objetivo:</strong> Prevenir contingencias penales y reputacionales en la empresa mediante un enfoque integral de cumplimiento, control interno y gobierno corporativo, reduciendo el riesgo de investigaciones y sanciones.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-red-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-red-800 mb-2">Protección de Derechos</h4>
+                  <h4 className="font-semibold text-red-800 mb-2">Mapa de Riesgos y Controles</h4>
                   <p className="text-sm text-gray-600">
-                    Proteger derechos en cada etapa del proceso penal con estrategias defensivas sólidas.
+                    Identificar focos de riesgo (tributario, cambiario, contratación, proveedores, fraude interno, corrupción, reportes) y diseñar controles, políticas y responsables para mitigarlos.
                   </p>
                 </div>
                 <div className="bg-red-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-red-800 mb-2">Cuestionar Imputaciones</h4>
+                  <h4 className="font-semibold text-red-800 mb-2">Cumplimiento y Evidencia de Buena Fe</h4>
                   <p className="text-sm text-gray-600">
-                    Cuestionar imputaciones desproporcionadas o mal fundamentadas mediante recursos legales.
+                    Implementar protocolos, capacitaciones y trazabilidad documental para demostrar diligencia debida, prevenir fallas y fortalecer la posición de la empresa ante auditorías o requerimientos.
                   </p>
                 </div>
                 <div className="bg-red-50 rounded-lg p-4">
-                  <h4 className="font-semibold text-red-800 mb-2">Resultados Favorables</h4>
+                  <h4 className="font-semibold text-red-800 mb-2">Continuidad del Negocio y Respuesta Temprana</h4>
                   <p className="text-sm text-gray-600">
-                    Lograr absoluciones, preacuerdos favorables o rebajas significativas de responsabilidad.
+                    Crear rutas de actuación ante alertas (requerimientos, hallazgos, denuncias internas) con investigaciones internas básicas, planes correctivos y acompañamiento estratégico para contener el riesgo antes de que escale.
                   </p>
                 </div>
               </div>
@@ -802,7 +842,7 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-lexena-azul">Regularización y Estructuración Inmobiliaria</h3>
               </div>
               <p className="text-gray-700 mb-4 text-lg">
-                <strong>Objetivo:</strong> Apoyar a personas, constructores y desarrolladores urbanos en la regularización de propiedades y estructuración de proyectos.
+                <strong>Objetivo:</strong> acompañar jurídicamente tanto a personas naturales y jurídicas en el desarrollo inmobiliario, ofreciendo certeza sobre el debido cumplimientos de las normas vigentes de los planes de ordenamiento con todas sus determinantes.
               </p>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-amber-50 rounded-lg p-4">
@@ -932,7 +972,7 @@ export default function Home() {
               <div className="h-48 relative">
                 <Image 
                   src="/team/albeiro-camelo.jpg"
-                  alt="Albeiro Camelo - Abogado Constructor Civil"
+                  alt="Alveiro Camelo - Abogado Constructor Civil"
                   fill
                   className="object-cover"
                 />

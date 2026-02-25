@@ -2,16 +2,16 @@ const CasosExito = () => {
   const pilares = [
     {
       id: 1,
-      titulo: "Derecho Corporativo: Blindaje jurídico para startups y PYMES",
-      descripcion: "Estructuración legal integral para empresas emergentes y pequeñas empresas, incluyendo constitución, contratos, propiedad intelectual y cumplimiento regulatorio.",
+      titulo: "Acompañamiento integral ",
+      descripcion: "Brindamos consultoría cambiaria especializada orientada a la prevención de riesgos, mitigación de contingencias y fortalecimiento de la posición jurídica del contribuyente frente al Banco de la República, la DIAN y demás autoridades de control. legal integral para empresas emergentes y pequeñas empresas, incluyendo constitución, contratos, propiedad intelectual y cumplimiento regulatorio.",
       categoria: "Derecho Corporativo",
       icono: "🏢"
     },
     {
       id: 2,
-      titulo: "Resolución de Conflictos: Estrategias de negociación y litigio efectivas",
-      descripcion: "Métodos alternativos de resolución de conflictos y representación en procesos judiciales para proteger sus intereses empresariales y personales.",
-      categoria: "Resolución de Conflictos",
+      titulo: "Defensa Tributaria: Planeación estratégica ",
+      descripcion: "Prestamos consultoría tributaria integral con un enfoque estratégico que abarca planeación, cumplimiento y defensa, orientado a proteger la posición fiscal de la empresa y garantizar seguridad jurídica frente a la DIAN y demás autoridades tributarias. Acompañamos a nuestros clientes durante todo el ciclo tributario, anticipando riesgos, optimizando la carga impositiva dentro del marco legal y preparando técnicamente a la organización para escenarios de fiscalización y controversia.",
+      categoria: "Defensa Tributaria",
       icono: "⚖️"
     },
     {
@@ -30,8 +30,8 @@ const CasosExito = () => {
     },
     {
       id: 5,
-      titulo: "Insolvencia Empresarial: Reorganización y recuperación financiera",
-      descripcion: "Soluciones legales para empresas en crisis, procesos de reorganización, liquidación y protección de activos ante situaciones de insolvencia.",
+      titulo: "Insolvencia Empresarial: Reorganización y liquidacion judicial",
+      descripcion: "Asesoría estratégica en insolvencia para la preservación de valor: acompañamiento en reorganización o liquidación judicial, gestión de acreencias y blindaje jurídico ante conflictos y procesos legales.",
       categoria: "Insolvencia Empresarial",
       icono: "📊"
     },
